@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<GridPane alignment="center" hgap="10" prefHeight="467.0" prefWidth="875.0" vgap="10" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <AnchorPane prefHeight="466.0" prefWidth="874.0">
+         <children>
+            <Label layoutX="247.0" layoutY="46.0" text="Bienvenu au jeu de la vie" textAlignment="CENTER">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+            <VBox alignment="TOP_CENTER" layoutX="230.0" layoutY="164.0" prefHeight="212.0" prefWidth="437.0">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="58.0" prefWidth="437.0">
+                     <children>
+                        <Label text="Nombre de colonnes      " />
+                        <Spinner fx:id="nbColonnesSpinner" prefHeight="26.0" prefWidth="89.0" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="58.0" prefWidth="437.0">
+                     <children>
+                        <Label text="Nombre de lignes           " />
+                        <Spinner fx:id="nbLignesSpinner" prefHeight="26.0" prefWidth="88.0" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="58.0" prefWidth="437.0">
+                     <children>
+                        <Label text="Nombre de génerations  " />
+                        <Spinner fx:id="nbGenerationsSpinner" prefHeight="26.0" prefWidth="89.0" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" layoutX="10.0" layoutY="126.0" prefHeight="58.0" prefWidth="437.0">
+                     <children>
+                         <Label text="Image source     " />
+                        <TextField fx:id="txtFieldSrc" prefHeight="26.0" prefWidth="194.0" />
+
+                        <Button mnemonicParsing="false" onAction="#parcourirBtn" text="Parcourir" />
+                     </children>
+                  </HBox>
+                  <Button mnemonicParsing="false" onAction="#validerBtn" text="Valider" />
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </children>
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+</GridPane>
